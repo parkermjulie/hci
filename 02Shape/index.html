@@ -9,18 +9,49 @@
   </head>
   <body>
     <a-scene background="color: gray">
-  
-    
+ 
+    <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"
+  repeat="10 10"
+  	color="pink"
+  ></a-plane>
+      
       <a-box id="myBox"
-     position="0 2 -10" rotation="0 45 45" scale="1 1 1"
-        width="3"
-        height="3"
-        depth="3"
-        color="yellow" 
-        shadow>
-      </a-box>
+               position="0 2 -10" 
+                 rotation="0 45 45" 
+                 scale="1 1 1"
+                  width="3"
+                  height="3"
+                  depth="3"
+                  color="yellow" 
+                  shadow>
+                </a-box> 
+      
+      <a-circle id="myCircle"
+      position="1 5 -10"
+      rotation="0 45 45" 
+      scale="4 4 1"
+      color="green"
+      width="1"
+      height="1" 
+      depth="1"
+      material="side: double"
+      
+      >
+      
+      </a-circle> 
+      
+      <a-ring id="myRing"
+      color="teal" 
+      radius-inner="4" 
+      radius-outer="5"
+      position="1 5 -10"
+     theta-length="180"
+  
+      >
       
       
+		</a-ring>
+
     </a-scene>
   </body>
 </html>
